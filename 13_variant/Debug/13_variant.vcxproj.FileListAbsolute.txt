@@ -1,1 +1,2 @@
 C:\Users\Pavel\Source\Repos\Project4_Task3\13_variant\Debug\13_variant.exe
+C:\Users\Admin\CppVsCode\Project4_Task3\13_variant\Debug\13_variant.exe
