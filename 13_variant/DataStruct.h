@@ -23,8 +23,10 @@ public:
 	operator std::string();
 
 private:
-	int field1;
-	int field2;
-	std::mutex mutex1;
+	int field1 = 0;
+	int field2 = 0;
+	//30% read (10% read + 20% string) 10% write in total
+	std::shared_mutex mutex1;
+	//70% read (50% read + 20% string) 10% write in total
 	std::shared_mutex mutex2;
 };
