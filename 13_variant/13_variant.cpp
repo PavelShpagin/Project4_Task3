@@ -166,11 +166,7 @@ void launchThreads(Iterator first, Iterator last, int threadsNum)
     }
     execute(data, block_start, last, results[threadsNum - 1]);
 
-    long long totalTime = 0;
-    for (const auto& time : results) {
-        totalTime += time;
-    }
-    transformedTimeOut(totalTime);
+    transformedTimeOut(*max_element(results.begin(), results.end()));
 }
 
 
